@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive_style.css">
+
+</head>
+
+<body>
+    <aside>
+        <div id="list-example" class="list-group text-capitalize">
+            <span class="text-end closeIcon">
+                <i class="icon fa-solid fa-xmark m-4"></i>
+            </span>
+            <a class="list-group-item list-group-item-action" href="#home">home</a>
+            <a class="list-group-item list-group-item-action" href="#toggleSlider">faq</a>
+            <a class="list-group-item list-group-item-action" href="#duration">duration</a>
+            <a class="list-group-item list-group-item-action" href="#contact">contact</a>
+        </div>
+        <div class="openMenu text-white d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-bars px-3"></i>
+            <h3>open</h3>
+        </div>
+    </aside>
+
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+        tabindex="0">
+        <section id="home">
+            <div class="overlay"></div>
+            <div class="homeContent container text-white text-center">
+                <h1 class="mb-1 text-capitalize">egyptian party</h1>
+                <p class="text-capitalize">let's have fun</p>
+            </div>
+        </section>
+
+        <section id="toggleSlider" class="my-5">
+            <div class="w-50 m-auto bg-body-secondary text-center">
+                <h3 class="toggleBtn text-capitalize bg-info p-3 m-0">singer one</h3>
+                <div class="toggleInner opened m-0">
+                    Occaecat est cillum velit id minim officia elit adipisicing. Aliqua consectetur quis aliquip et
+                    ipsum. Irure cillum eu aliquip amet irure quis veniam quis quis ea minim aliquip commodo. Incididunt
+                    mollit mollit id officia id mollit fugiat est et nostrud veniam Lorem non deserunt. Enim tempor in
+                    dolore duis in mollit in. Minim sint ea reprehenderit eu et pariatur ea. Cillum nulla pariatur ex et
+                    deserunt.
+                </div>
+                <h3 class="toggleBtn text-capitalize bg-info p-3 m-0">singer two</h3>
+                <div class="toggleInner m-0">
+                    Occaecat est cillum velit id minim officia elit adipisicing. Aliqua consectetur quis aliquip et
+                    ipsum. Irure cillum eu aliquip amet irure quis veniam quis quis ea minim aliquip commodo. Incididunt
+                    mollit mollit id officia id mollit fugiat est et nostrud veniam Lorem non deserunt. Enim tempor in
+                    dolore duis in mollit in. Minim sint ea reprehenderit eu et pariatur ea. Cillum nulla pariatur ex et
+                    deserunt.
+                </div>
+                <h3 class="toggleBtn text-capitalize bg-info p-3 m-0">singer three</h3>
+                <div class="toggleInner m-0">
+                    Occaecat est cillum velit id minim officia elit adipisicing. Aliqua consectetur quis aliquip et
+                    ipsum. Irure cillum eu aliquip amet irure quis veniam quis quis ea minim aliquip commodo. Incididunt
+                    mollit mollit id officia id mollit fugiat est et nostrud veniam Lorem non deserunt. Enim tempor in
+                    dolore duis in mollit in. Minim sint ea reprehenderit eu et pariatur ea. Cillum nulla pariatur ex et
+                    deserunt.
+                </div>
+            </div>
+        </section>
+
+        <section id="counter" class="m-auto my-5">
+            <div class="overlay"></div>
+            <div class="container py-5">
+                <div class="row">
+
+                    <!-- day -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div
+                            class="card border-0 bg-transparent text-white d-flex align-items-center justify-content-center text-center">
+                            <div class="cardIcon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title day text-uppercase mb-3"></h2>
+                                <p class="card-text text-uppercase fw-bold">day</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- hour -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div
+                            class="card border-0 bg-transparent text-white d-flex align-items-center justify-content-center text-center">
+                            <div class="cardIcon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title hour text-uppercase mb-3"></h2>
+                                <p class="card-text text-uppercase fw-bold">hour</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- minute -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div
+                            class="card border-0 bg-transparent text-white d-flex align-items-center justify-content-center text-center">
+                            <div class="cardIcon">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title minute text-uppercase mb-3"></h2>
+                                <p class="card-text text-uppercase fw-bold">minute</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div
+                            class="card border-0 bg-transparent text-white d-flex align-items-center justify-content-center text-center">
+                            <div class="cardIcon">
+                                <i class="fa-solid fa-stopwatch-20"></i>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title second text-uppercase mb-3"></h2>
+                                <p class="card-text text-uppercase fw-bold">second</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="my-5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="contactDetails my-5 bg-white p-5">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="title mb-5 text-capitalize">
+                                <h2 class="position-relative">send message</h2>
+                            </div>
+                            <div class="form">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control rounded-0" id="exampleInputName1"
+                                            aria-describedby="emailHelp" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control rounded-0" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control myMessage rounded-0" id="exampleFormControlTextarea1"
+                                            rows="10"></textarea>
+                                    </div>
+                                    <h5 class="text-capitalize characterLimit">you have only: <span class="characterNumber text-danger"></span> character</h5>
+                                    <button type="submit"
+                                        class="btn btn-primary text-capitalize rounded-pill d-flex m-auto mt-4 py-2 px-4">send
+                                        message</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="title mb-5 text-capitalize">
+                                <h2 class="position-relative">get in touch</h2>
+                            </div>
+                            <div class="info">
+                                <p class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta
+                                    quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse
+                                    laboriosam ratione nobis mollitia inventore?
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item border-0 ps-0 d-flex align-items-center gap-3">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        329 WASHINGTON ST BOSTON, MA 02108
+                                    </li>
+                                    <li class="list-group-item border-0 ps-0 d-flex align-items-center gap-3">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                        (617) 557-0089
+                                    </li>
+                                    <li class="list-group-item border-0 ps-0 d-flex align-items-center gap-3">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        contact@example.com
+                                    </li>
+                                </ul>
+    
+                                <ul class="list-group socialMedia d-flex flex-row align-items-center">
+                                    <li class="list-group-item border-0 ps-0">
+                                        <a class="text-decoration-none" target="_blank" href="https://www.facebook.com/">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item border-0 ps-0">
+                                        <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item border-0 ps-0">
+                                        <a class="text-decoration-none" target="_blank" href="https://twitter.com/">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item border-0 ps-0">
+                                        <a class="text-decoration-none" target="_blank" href="https://linkedin.com/">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-white p-4 text-center">
+        <p>
+            &copy; copyright <span class="fw-bold">JQuery</span>. all rights reserved
+        </p>
+        <p>
+            designed by kero
+        </p>
+    </footer>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

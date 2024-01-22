@@ -1,0 +1,60 @@
+/* for responsive design */
+@media screen and (max-width: 900px) {
+    header #home .homeContent h1 {
+        font-size: 3.5rem;
+    }
+
+    header #home .homeContent p {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .testimonial .image {
+        width: 20%;
+    }
+    
+    .testimonial .carousel .content p{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header #home .homeContent h1 {
+        font-size: 3rem;
+    }
+
+    header #home .homeContent p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    #service .title h2,
+    #work .title h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #service .title h2,
+    #work .title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .testimonial .image {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    header #home .homeContent h1 {
+        font-size: 2rem;
+    }
+
+    header #home .homeContent p {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
